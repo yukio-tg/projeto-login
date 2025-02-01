@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body{
+    background-color: rgb(96, 39, 129);
+}
+
+main{
+    width: 260px;
+    height: 520px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20vh;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.589);
+}
+
+main > div#img{
+    background: url("https://media.wired.com/photos/5932710ca312645844994e4b/master/w_1600%2Cc_limit/C%25C5%2592UR-D%25C3%2589FENSE.jpg");
+}
+
+main > h1{
+    font-size: 2em;
+    font-weight: bolder;
+
+}
