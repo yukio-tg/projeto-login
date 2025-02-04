@@ -1,0 +1,47 @@
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoint
+--------------------------------------------------
+|  Dispositivo       | Largura (px)               |
+--------------------------------------------------
+| Pequenas telas     | até 600px                  |
+| Celulares          | 600px até 768px            |
+| Tablets           | 768px até 1024px           |
+| Laptops/Desktops  | 1024px até 1200px          |
+| Telas grandes     | acima de 1200px            |
+--------------------------------------------------
+*/
+
+/* Impressão */
+@media print{
+    body{
+        background-color: white;
+    }
+
+    main{
+        background-color: white;
+    }
+
+    img{
+        display: none;
+    }
+
+    input{
+        background-color: gray;
+        color: black;
+    }
+
+    #entrar{
+        background-color: white;
+        color: gray;
+    }
+
+
+}
+
+/* Tablets */
+@media screen and (min-width: 768px){
+    body{
+        background-image: linear-gradient(rgb(96, 39, 129), rgb(75, 138, 103));
+    }
+}

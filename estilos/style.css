@@ -24,7 +24,7 @@ main{
 }
 
 main > div#img > img{
-    height: 140px;
+    height: 170px;
     width: 260px;
     border-radius: 10px 10px 0px 0px;
 }
@@ -69,6 +69,28 @@ input#entrar:hover{
     cursor: pointer;
  }
 
+ #esqueci{
+    position: relative;
+    color: rgb(26, 26, 26);
+    border: 1px solid rgb(75, 138, 103);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    height: 40px;
+    width: 240px;
+ }
+
+ #esqueci:hover{
+    background-color: rgb(119, 172, 142);
+ }
+
+#esqueci > a{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
 p.campo > input{
     width: 170px;
     height: 30px;
@@ -85,5 +107,5 @@ p.campo > input{
 }
 
 #mail{
-    height: 20px;
+    height: 15px;
 }
