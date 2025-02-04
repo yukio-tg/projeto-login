@@ -23,8 +23,10 @@ main{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.589);
 }
 
-main > div#img{
-    background: url("https://media.wired.com/photos/5932710ca312645844994e4b/master/w_1600%2Cc_limit/C%25C5%2592UR-D%25C3%2589FENSE.jpg");
+main > div#img > img{
+    height: 140px;
+    width: 260px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 main > h1{
@@ -40,15 +42,7 @@ main > p {
 }
 
 p.campo {
-    position: relative;
-}
-
-p.campo > input{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 6px;
-    transform: translate(20%);
+    height: 30px;
 }
 
 form > p.campo{
@@ -61,4 +55,35 @@ form > p.campo{
 input#entrar{
    margin: auto;
    display: block;
+   width: 240px;
+   height: 40px;
+   background-color: rgb(75, 138, 103);
+   border-radius: 5px;
+   border: none;
+   font-weight: bold;
+   color: white;
+}
+
+input#entrar:hover{
+    background-color: rgb(43, 90, 64);
+    cursor: pointer;
+ }
+
+p.campo > input{
+    width: 170px;
+    height: 30px;
+    transform: translate(25%, -135%);
+    border-radius: 5px;
+    color: black;
+    text-indent: 10px;
+    background-color: rgb(152, 211, 188);
+}
+
+.icon{
+    height: 40px;
+    transform: translate(-10%);
+}
+
+#mail{
+    height: 20px;
 }
