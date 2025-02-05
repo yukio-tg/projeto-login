@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
@@ -10,18 +11,18 @@
 <body>
     <main>
         <div id="img">
-            <img src="imagens/building-pattern.webp" alt="">
+            
         </div>
         <h1>Login</h1>
         <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
         <form action="cadastro.php" method="post" autocomplete="on">
             <p class="campo">
-                <img src="imagens/person-icon.png" alt="" class="icon">
-                <input type="email" name="email" id="iemail" placeholder="seu e-mail" required minlength="8"><label for="iemail"></label>
+                <span class="material-symbols-outlined">person</span>
+                <input type="email" name="email" id="iemail" placeholder="seu e-mail" required minlength="8">
             </p>
             
             <p class="campo">
-                <img src="imagens/key-icon.png" alt="" class="icon">
+                <span class="material-symbols-outlined">key</span>
                 <input type="password" name="password" id="ipassword" placeholder="sua senha" required  minlength="8"><label for="ipassword"></label>
             </p>
 
@@ -29,11 +30,9 @@
                 <input id="entrar" type="submit" value="Entrar">
             </p>
 
-            <p>
-                <div id="esqueci">
-                    <a href="esqueci.html">Esqueci a senha <img src="imagens/mail-icon.png" alt="" id="mail"></a>
-                </div>
-            </p>
+            <div id="esqueci">
+                <a href="esqueci.html">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
+            </div>
         </form>
     </main>
 </body>

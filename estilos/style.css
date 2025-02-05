@@ -1,32 +1,48 @@
 @charset "UTF-8";
 
+:root {
+    --cor-primaria: rgb(96, 39, 129);
+    --cor-secundaria: rgb(75, 138, 103);
+}
+
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     text-decoration: none;
     color: black;
 }
 
-body{
-    background-color: rgb(96, 39, 129);
+body, html{
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    width: 100vw;
 }
 
 main{
-    width: 260px;
-    height: 520px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    width: 250px;
+    height: 500px;
     background-color: white;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 20vh;
+    border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.589);
+
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }
 
-main > div#img > img{
-    height: 170px;
-    width: 260px;
-    border-radius: 10px 10px 0px 0px;
+main > div#img{
+    background: var(--cor-primaria) url(../imagens/building-pattern.webp);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
 }
 
 main > h1{
@@ -38,67 +54,39 @@ main > h1{
 
 main > p {
     font-size: 0.8em;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
 }
 
 p.campo {
-    height: 30px;
+    
 }
 
 form > p.campo{
-    background-color: rgb(96, 39, 129);
-    border-radius: 5px;
-    margin: 5px 10px;
-    border: 12.5px solid rgb(96, 39, 129);
+    
 }
 
 input#entrar{
-   margin: auto;
-   display: block;
-   width: 240px;
-   height: 40px;
-   background-color: rgb(75, 138, 103);
-   border-radius: 5px;
-   border: none;
-   font-weight: bold;
-   color: white;
+   
 }
 
 input#entrar:hover{
-    background-color: rgb(43, 90, 64);
-    cursor: pointer;
+    
  }
 
  #esqueci{
-    position: relative;
-    color: rgb(26, 26, 26);
-    border: 1px solid rgb(75, 138, 103);
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6px;
-    height: 40px;
-    width: 240px;
+
  }
 
  #esqueci:hover{
-    background-color: rgb(119, 172, 142);
+    
  }
 
 #esqueci > a{
-    position: absolute;
-    padding-top: 10px;
-    margin-left: 50px;
+    
 }
 
 p.campo > input{
-    width: 170px;
-    height: 30px;
-    transform: translate(25%, -135%);
-    border-radius: 5px;
-    color: black;
-    text-indent: 10px;
-    background-color: rgb(152, 211, 188);
+    
 }
 
 .icon{
